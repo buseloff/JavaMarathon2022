@@ -12,25 +12,24 @@ public class Teacher {
     }
     public void evaluate(Student student1) {
         Random random = new Random();
-        int a = random.nextInt(5);
+        int a = random.nextInt(4) + 2;
         System.out.println(a);
         String grade = null;
         switch (a) {
-            case 0:
-                grade = "неудовлетворительно";
-                break;
-            case 1:
-                grade = "неудовлетворительно";
-                break;
             case 2:
-                grade = "удовлетворительно";
+                grade = "неудовлетворительно";
                 break;
             case 3:
-                grade = "хорошо";
+                grade = "удовлетворительно";
                 break;
             case 4:
+                grade = "хорошо";
+                break;
+            case 5:
                 grade = "отлично";
                 break;
+            default:
+                System.out.println("Неверная оценка");
         }
         System.out.println("Преподаватель " + name + " оценил студента с" +
                 " именем "+ student1.name + " по предмету " + subject + " на оценку " + grade);

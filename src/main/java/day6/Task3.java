@@ -18,9 +18,7 @@ package day6;
 public class Task3 {
     public static void main(String[] args) {
         Teacher teacher1 = new Teacher("Иван Иванович", "Алгебра");
-        Teacher teacher2 = new Teacher("Pidor Enany", "Hueta");
         Student student1 = new Student("Сергей Петров");
         teacher1.evaluate(student1);
-        teacher2.evaluate(student1);
     }
 }
