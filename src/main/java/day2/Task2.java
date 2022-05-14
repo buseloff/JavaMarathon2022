@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class Task2 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int a = input.nextInt();
-        int b = input.nextInt();
-        if (a > b || a == b) {
+        int firstNumber = input.nextInt();
+        int secondNumber = input.nextInt();
+        if (firstNumber > secondNumber || firstNumber == secondNumber) {
             System.out.println("Ошибка ввода");
         } else
-            for (; a < b; a++) {
-            if (a % 5 == 0 && a % 10 != 0) {
-                System.out.print(a + " ");
+            for (; firstNumber < secondNumber; firstNumber++) {
+                if (firstNumber % 5 == 0 && firstNumber % 10 != 0) {
+                    System.out.print(firstNumber + " ");
+                }
             }
-        }
     }
 }
