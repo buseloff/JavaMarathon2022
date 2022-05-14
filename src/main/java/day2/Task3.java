@@ -10,8 +10,10 @@ public class Task3 {
         if (firstNumber > secondNumber || firstNumber == secondNumber) {
             System.out.println("Ошибка ввода");
         }
+
         while (firstNumber < secondNumber) {
-            if (firstNumber % 5 == 0 && secondNumber % 10 != 0) {
+
+            if ((firstNumber % 5 == 0) && (firstNumber % 10 != 0)) {
                 System.out.print(firstNumber + " ");
             }
             firstNumber++;

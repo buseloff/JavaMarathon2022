@@ -21,13 +21,13 @@ public class Task3 {
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
         for (int i = 0; i < 5; i++) {
-            double a = userInput.nextDouble();
-            double b = userInput.nextDouble();
-            if (b == 0) {
+            double numerator = userInput.nextDouble();
+            double denominator = userInput.nextDouble();
+            if (denominator == 0) {
                 System.out.println("Деление на 0");
                 continue;
             }
-            System.out.println(a / b);
+            System.out.println(numerator / denominator);
         }
     }
 }

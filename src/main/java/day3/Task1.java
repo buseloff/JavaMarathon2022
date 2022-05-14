@@ -23,11 +23,11 @@ public class Task1 {
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
         while (true) {
-            String city = userInput.nextLine();
-            if (city.equals("Stop")) {
+            String nameOfCity = userInput.nextLine();
+            if (nameOfCity.equals("Stop")) {
                 break;
             }
-            switch (city) {
+            switch (nameOfCity) {
                 case "Москва":
                 case "Владивосток":
                 case "Ростов":

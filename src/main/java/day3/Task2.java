@@ -21,12 +21,13 @@ public class Task2 {
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
         while (true) {
-            double a = userInput.nextDouble();
-            double b = userInput.nextDouble();
-            if (b == 0) {
+            double numerator = userInput.nextDouble();
+            double denominator = userInput.nextDouble();
+            if (denominator == 0) {
+                System.out.println("Знаменатель равен 0!");
                 break;
             }
-            System.out.println(a / b);
+            System.out.println(numerator / denominator);
         }
     }
 }
