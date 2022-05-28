@@ -10,9 +10,11 @@ package day5;
 
 public class Task2 {
     public static void main(String[] args) {
-        Motorbike honda = new Motorbike(2020, "Red", "CBR650R");
-        System.out.println(honda.getYearOfManufacture());
-        System.out.println(honda.getColor());
-        System.out.println(honda.getModel());
+        Motorbike hondaBike= new Motorbike(2022, "Red", "CBR650R");
+        System.out.println(hondaBike.getYearOfManufacture());
+        System.out.println(hondaBike.getColor());
+        System.out.println(hondaBike.getModel());
+        System.out.println(hondaBike);
+        
     }
 }

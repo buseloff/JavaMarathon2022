@@ -28,4 +28,13 @@ class Car {
     public String getModel() {
         return model;
     }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "yearOfManufacture=" + yearOfManufacture +
+                ", color='" + color + '\'' +
+                ", model='" + model + '\'' +
+                '}';
+    }
 }

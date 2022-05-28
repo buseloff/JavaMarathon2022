@@ -9,12 +9,13 @@ package day5;
 
 public class Task1 {
     public static void main(String[] args) {
-        Car audi = new Car();
-        audi.setYearOfManufacture(2017);
-        System.out.println(audi.getYearOfManufacture());
-        audi.setColor("Blue");
-        System.out.println(audi.getColor());
-        audi.setModel("A4");
-        System.out.println(audi.getModel());
+        Car mercedesCar = new Car();
+        mercedesCar.setYearOfManufacture(2017);
+        System.out.println(mercedesCar.getYearOfManufacture());
+        mercedesCar.setColor("Red");
+        System.out.println(mercedesCar.getColor());
+        mercedesCar.setModel("E200");
+        System.out.println(mercedesCar.getModel());
+        System.out.println(mercedesCar);
     }
 }

@@ -23,4 +23,12 @@ class Motorbike {
         return model;
     }
 
+    @Override
+    public String toString() {
+        return "Motorbike{" +
+                "yearOfManufacture=" + yearOfManufacture +
+                ", color='" + color + '\'' +
+                ", model='" + model + '\'' +
+                '}';
+    }
 }
