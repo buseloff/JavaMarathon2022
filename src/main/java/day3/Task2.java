@@ -21,12 +21,16 @@ public class Task2 {
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
         while (true) {
+            System.out.println("Введите числитель");
             double numerator = userInput.nextDouble();
+            System.out.println("Введите знаменатель");
+            System.out.println("При вводе 0 программа остановит свою работу");
             double denominator = userInput.nextDouble();
             if (denominator == 0) {
                 System.out.println("Знаменатель равен 0!");
                 break;
             }
+            System.out.println("Результат:");
             System.out.println(numerator / denominator);
         }
     }

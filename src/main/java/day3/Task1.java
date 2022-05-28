@@ -23,6 +23,7 @@ public class Task1 {
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
         while (true) {
+            System.out.println("Введите название города или слово Stop для остановки программы");
             String nameOfCity = userInput.nextLine();
             if (nameOfCity.equals("Stop")) {
                 break;

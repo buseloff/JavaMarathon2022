@@ -21,7 +21,9 @@ public class Task3 {
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
         for (int i = 0; i < 5; i++) {
+            System.out.println("Введите числитель");
             double numerator = userInput.nextDouble();
+            System.out.println("Введите знаменатель");
             double denominator = userInput.nextDouble();
             if (denominator == 0) {
                 System.out.println("Деление на 0");
