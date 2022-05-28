@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Task4 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        System.out.println("Введите число");
         double x = input.nextDouble();
         double y;
         if (x >= 5) {
