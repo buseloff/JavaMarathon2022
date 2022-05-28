@@ -1,5 +1,5 @@
 /*
-2. Создать новый массив размера 100 и заполнить его случайными числами из диапазона от 0 до 10000.
+2. Создать новый массив размера 40 и заполнить его случайными числами из диапазона от 0 до 10000.
 Затем, используя циклы for each вывести:
 наибольший элемент массива
 наименьший элемент массива
@@ -17,7 +17,7 @@ import java.util.Random;
 public class Task2 {
     public static void main(String[] args) {
         Random random = new Random();
-        int[] array = new int[100];
+        int[] array = new int[40];
         for (int i = 0; i < array.length; i++) {
             array[i] = random.nextInt(10001);
         }
@@ -37,6 +37,7 @@ public class Task2 {
                 sumEndsZero += elementOfArray;
             }
         }
+        System.out.println("Исходный массив:");
         System.out.println(Arrays.toString(array));
         System.out.println("Наибольший элемент массива: " + maxNumber);
         System.out.println("Наименьший элемент массива: " + minNumber);

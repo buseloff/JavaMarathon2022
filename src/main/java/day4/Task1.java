@@ -31,6 +31,7 @@ import java.util.Scanner;
 public class Task1 {
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
+        System.out.println("Введите размерность массива");
         int n = userInput.nextInt();
         Random random = new Random();
         int biggerThanEight = 0;
