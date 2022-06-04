@@ -10,6 +10,7 @@ public class Teacher {
         this.name = name;
         this.subject = subject;
     }
+
     public void evaluate(Student student1) {
         Random random = new Random();
         int a = random.nextInt(4) + 2;
@@ -32,6 +33,14 @@ public class Teacher {
                 System.out.println("Неверная оценка");
         }
         System.out.println("Преподаватель " + name + " оценил студента с" +
-                " именем "+ student1.name + " по предмету " + subject + " на оценку " + grade);
+                " именем " + student1.name + " по предмету " + subject + " на оценку " + grade);
+    }
+
+    @Override
+    public String toString() {
+        return "Преподаватель {" +
+                "имя = '" + name + '\'' +
+                ", предмет ='" + subject + '\'' +
+                '}';
     }
 }

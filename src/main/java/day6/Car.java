@@ -32,7 +32,17 @@ public class Car {
     public void info() {
         System.out.println("Это автомобиль");
     }
+
     public int yearDifference(int year) {
         return (year - this.yearOfManufacture);
+    }
+
+    @Override
+    public String toString() {
+        return "Автомобиль {" +
+                "год выпуска = " + yearOfManufacture +
+                ", цвет = '" + color + '\'' +
+                ", модель = '" + model + '\'' +
+                '}';
     }
 }

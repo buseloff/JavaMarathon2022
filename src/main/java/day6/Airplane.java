@@ -7,6 +7,14 @@ public class Airplane {
     private final int weight;
     private int fuel;
 
+    public Airplane(String producer, int year, int length, int weight) {
+        this.producer = producer;
+        this.year = year;
+        this.length = length;
+        this.weight = weight;
+        this.fuel = 0;
+    }
+
     public void setYear(int year) {
         this.year = year;
     }
@@ -15,20 +23,24 @@ public class Airplane {
         this.length = length;
     }
 
-
-    public Airplane(String producer, int year, int length, int weight) {
-        this.producer = producer;
-        this.year = year;
-        this.length = length;
-        this.weight = weight;
-        this.fuel = 0;
+    @Override
+    public String toString() {
+        return "Самолет{" +
+                "Изготовитель = '" + producer + '\'' +
+                ", год выпуска = " + year +
+                ", длина = " + length +
+                ", вес = " + weight +
+                ", количество топлива в баке = " + fuel +
+                '}';
     }
+
     public void info() {
         System.out.println("Изготовитель: " + producer + ", год выпуска: " + year + ", длина: " + length +
                 ", вес: " + weight + ", количество топлива в баке: " + fuel);
     }
+
     public void fillUp(int addFuel) {
-        fuel +=addFuel;
+        fuel += addFuel;
 
     }
 }

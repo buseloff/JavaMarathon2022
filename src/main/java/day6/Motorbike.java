@@ -26,8 +26,17 @@ public class Motorbike {
     public void info() {
         System.out.println("Это мотоцикл");
     }
+
     public int yearDifference(int year) {
         return (year - this.yearOfManufacture);
     }
 
+    @Override
+    public String toString() {
+        return "Мотоцикл {" +
+                "год выпуска = " + yearOfManufacture +
+                ", цвет = '" + color + '\'' +
+                ", модель = '" + model + '\'' +
+                '}';
+    }
 }
