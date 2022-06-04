@@ -23,15 +23,18 @@ public class Airplane {
         this.weight = weight;
         this.fuel = 0;
     }
+
     public void info() {
         System.out.println("Изготовитель: " + producer + ", год выпуска: " + year + ", длина: " + length +
                 ", вес: " + weight + ", количество топлива в баке: " + fuel);
     }
+
     public void fillUp(int addFuel) {
-        fuel +=addFuel;
+        fuel += addFuel;
 
     }
 
+    @Override
     public String toString() {
         return "Изготовитель: " + producer + ", год выпуска: " + year + ", длина: " + length +
                 ", вес: " + weight + ", количество топлива в баке: " + fuel;
