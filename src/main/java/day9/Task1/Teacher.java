@@ -15,8 +15,16 @@ public class Teacher extends Human {
     public void setSubjectName(String subjectName) {
         this.subjectName = subjectName;
     }
+
     public void printInfo() {
         super.printInfo();
         System.out.println("Этот преподаватель с именем " + getName());
+    }
+
+    @Override
+    public String toString() {
+        return "Teacher{" +
+                "subjectName='" + subjectName + '\'' +
+                '}';
     }
 }

@@ -35,4 +35,12 @@ public class Rectangle extends Figure {
     public double perimeter() {
         return (width + height) * 2;
     }
+
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "width=" + width +
+                ", height=" + height +
+                '}';
+    }
 }

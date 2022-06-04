@@ -46,4 +46,13 @@ public class Triangle extends Figure {
     public double perimeter() {
         return firstSide + secondSide + thirdSide;
     }
+
+    @Override
+    public String toString() {
+        return "Triangle{" +
+                "firstSide=" + firstSide +
+                ", secondSide=" + secondSide +
+                ", thirdSide=" + thirdSide +
+                '}';
+    }
 }

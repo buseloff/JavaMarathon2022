@@ -3,14 +3,14 @@ package day9.Task2;
 public class TestFigures {
     public static void main(String[] args) {
         Figure[] figures = {
-                new Triangle("Red", 10, 10, 10),
-                new Triangle("Green", 10, 20, 30),
-                new Triangle("Red", 10, 20, 15),
+                new Triangle("Red", 10, 10, 16),
+                new Triangle("Green", 10, 20, 33),
+                new Triangle("Red", 10, 20, 11),
                 new Rectangle("Red", 5, 10),
                 new Rectangle("Orange", 40, 15),
-                new Circle("Red", 4),
-                new Circle("Red", 10),
-                new Circle("Blue", 5)
+                new Circle("Red", 6),
+                new Circle("Red", 50),
+                new Circle("Blue", 58)
         };
         System.out.println(calculateRedPerimeter(figures));
         System.out.println(calculateRedArea(figures));

@@ -14,7 +14,15 @@ public class Human {
     public void setName(String name) {
         this.name = name;
     }
+
     public void printInfo() {
         System.out.println("Этот человек с именем " + name);
+    }
+
+    @Override
+    public String toString() {
+        return "Human{" +
+                "name='" + name + '\'' +
+                '}';
     }
 }
