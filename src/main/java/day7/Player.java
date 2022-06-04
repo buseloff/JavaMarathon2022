@@ -44,5 +44,12 @@ public class Player {
                 break;
         }
     }
+
+    @Override
+    public String toString() {
+        return "Player{" +
+                "stamina=" + stamina +
+                '}';
+    }
 }
 
